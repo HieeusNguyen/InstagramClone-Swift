@@ -21,6 +21,10 @@
 		CC60A0372D37F73600FF6758 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A0362D37F73600FF6758 /* SearchResultViewController.swift */; };
 		CC60A0392D37F75C00FF6758 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A0382D37F75C00FF6758 /* PostEditorViewController.swift */; };
 		CC60A03B2D37F77400FF6758 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A03A2D37F77400FF6758 /* PublishPostViewController.swift */; };
+		CC7638DA2D3949E800BF19FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7638D92D3949E800BF19FE /* GoogleService-Info.plist */; };
+		CCD2E5082D39508D002A0D22 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD2E5072D39508D002A0D22 /* DatabaseManager.swift */; };
+		CCD2E50A2D39528D002A0D22 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD2E5092D39528D002A0D22 /* AuthManager.swift */; };
+		CCD2E50C2D3952D2002A0D22 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD2E50B2D3952D2002A0D22 /* StorageManager.swift */; };
 		CCEB2F4A2D3798F600BB2DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB2F492D3798F600BB2DEF /* AppDelegate.swift */; };
 		CCEB2F4C2D3798F600BB2DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB2F4B2D3798F600BB2DEF /* SceneDelegate.swift */; };
 		CCEB2F4E2D3798F600BB2DEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB2F4D2D3798F600BB2DEF /* HomeViewController.swift */; };
@@ -49,6 +53,10 @@
 		CC60A0362D37F73600FF6758 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		CC60A0382D37F75C00FF6758 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		CC60A03A2D37F77400FF6758 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		CC7638D92D3949E800BF19FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCD2E5072D39508D002A0D22 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		CCD2E5092D39528D002A0D22 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CCD2E50B2D3952D2002A0D22 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CCEB2F462D3798F600BB2DEF /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEB2F492D3798F600BB2DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCEB2F4B2D3798F600BB2DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +86,6 @@
 				07A0FCFBD3DAEC5C168915BE /* Pods-InstagramClone.debug.xcconfig */,
 				7112C5A70E0873551205E97B /* Pods-InstagramClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,8 +125,12 @@
 		CC60A01A2D37F3B600FF6758 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CC7638D92D3949E800BF19FE /* GoogleService-Info.plist */,
 				CCEB2F492D3798F600BB2DEF /* AppDelegate.swift */,
 				CCEB2F4B2D3798F600BB2DEF /* SceneDelegate.swift */,
+				CCD2E5072D39508D002A0D22 /* DatabaseManager.swift */,
+				CCD2E5092D39528D002A0D22 /* AuthManager.swift */,
+				CCD2E50B2D3952D2002A0D22 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -149,14 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CC60A0272D37F61F00FF6758 /* Onboarding */,
-				CC60A02C2D37F67400FF6758 /* PostViewController.swift */,
-				CC60A02E2D37F6FC00FF6758 /* EditProfileViewController.swift */,
-				CC60A0302D37F70A00FF6758 /* SettingsViewController.swift */,
-				CC60A0322D37F71A00FF6758 /* ListViewViewController.swift */,
-				CC60A0342D37F72500FF6758 /* SearchViewController.swift */,
-				CC60A0362D37F73600FF6758 /* SearchResultViewController.swift */,
-				CC60A0382D37F75C00FF6758 /* PostEditorViewController.swift */,
-				CC60A03A2D37F77400FF6758 /* PublishPostViewController.swift */,
+				CCD2E5062D394FC1002A0D22 /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -168,6 +172,21 @@
 				CC60A02A2D37F64500FF6758 /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CCD2E5062D394FC1002A0D22 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				CC60A02C2D37F67400FF6758 /* PostViewController.swift */,
+				CC60A02E2D37F6FC00FF6758 /* EditProfileViewController.swift */,
+				CC60A0302D37F70A00FF6758 /* SettingsViewController.swift */,
+				CC60A0322D37F71A00FF6758 /* ListViewViewController.swift */,
+				CC60A0342D37F72500FF6758 /* SearchViewController.swift */,
+				CC60A0362D37F73600FF6758 /* SearchResultViewController.swift */,
+				CC60A0382D37F75C00FF6758 /* PostEditorViewController.swift */,
+				CC60A03A2D37F77400FF6758 /* PublishPostViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		CCEB2F3D2D3798F600BB2DEF = {
@@ -212,6 +231,7 @@
 				CCEB2F422D3798F600BB2DEF /* Sources */,
 				CCEB2F432D3798F600BB2DEF /* Frameworks */,
 				CCEB2F442D3798F600BB2DEF /* Resources */,
+				1D9A17363354DFB61C972C5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,12 +283,30 @@
 				CCEB2F562D3798F700BB2DEF /* Assets.xcassets in Resources */,
 				CCEB2F592D3798F700BB2DEF /* Base in Resources */,
 				CCEB2F512D3798F600BB2DEF /* Base in Resources */,
+				CC7638DA2D3949E800BF19FE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D9A17363354DFB61C972C5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstagramClone/Pods-InstagramClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		22A583C52463D13EE5C01EEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,17 +339,20 @@
 				CC60A0352D37F72500FF6758 /* SearchViewController.swift in Sources */,
 				CC60A0292D37F63200FF6758 /* LoginViewController.swift in Sources */,
 				CCEB2F4E2D3798F600BB2DEF /* HomeViewController.swift in Sources */,
+				CCD2E50C2D3952D2002A0D22 /* StorageManager.swift in Sources */,
 				CCEB2F4A2D3798F600BB2DEF /* AppDelegate.swift in Sources */,
 				CC60A0392D37F75C00FF6758 /* PostEditorViewController.swift in Sources */,
 				CC60A0332D37F71A00FF6758 /* ListViewViewController.swift in Sources */,
 				CC60A01D2D37F4F800FF6758 /* ExploreViewController.swift in Sources */,
 				CC60A02B2D37F64500FF6758 /* RegistrationViewController.swift in Sources */,
 				CCEB2F542D3798F600BB2DEF /* InstagramClone.xcdatamodeld in Sources */,
+				CCD2E50A2D39528D002A0D22 /* AuthManager.swift in Sources */,
 				CCEB2F4C2D3798F600BB2DEF /* SceneDelegate.swift in Sources */,
 				CC60A03B2D37F77400FF6758 /* PublishPostViewController.swift in Sources */,
 				CC60A0212D37F55D00FF6758 /* NotificationsViewController.swift in Sources */,
 				CC60A02F2D37F6FC00FF6758 /* EditProfileViewController.swift in Sources */,
 				CC60A0232D37F56800FF6758 /* ProfileViewController.swift in Sources */,
+				CCD2E5082D39508D002A0D22 /* DatabaseManager.swift in Sources */,
 				CC60A0312D37F70A00FF6758 /* SettingsViewController.swift in Sources */,
 				CC60A01F2D37F54C00FF6758 /* CameraViewController.swift in Sources */,
 				CC60A0372D37F73600FF6758 /* SearchResultViewController.swift in Sources */,
@@ -393,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -450,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -469,6 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DG3UCCG6LZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -498,6 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DG3UCCG6LZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
