@@ -22,10 +22,10 @@
 		CC60A0372D37F73600FF6758 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A0362D37F73600FF6758 /* SearchResultViewController.swift */; };
 		CC60A0392D37F75C00FF6758 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A0382D37F75C00FF6758 /* PostEditorViewController.swift */; };
 		CC60A03B2D37F77400FF6758 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A03A2D37F77400FF6758 /* PublishPostViewController.swift */; };
-		CC7638DA2D3949E800BF19FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7638D92D3949E800BF19FE /* GoogleService-Info.plist */; };
 		CCD2E5082D39508D002A0D22 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD2E5072D39508D002A0D22 /* DatabaseManager.swift */; };
 		CCD2E50A2D39528D002A0D22 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD2E5092D39528D002A0D22 /* AuthManager.swift */; };
 		CCD2E50C2D3952D2002A0D22 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD2E50B2D3952D2002A0D22 /* StorageManager.swift */; };
+		CCDDC6FF2D4A935A00201CAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCDDC6FE2D4A935A00201CAC /* GoogleService-Info.plist */; };
 		CCEB2F4A2D3798F600BB2DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB2F492D3798F600BB2DEF /* AppDelegate.swift */; };
 		CCEB2F4C2D3798F600BB2DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB2F4B2D3798F600BB2DEF /* SceneDelegate.swift */; };
 		CCEB2F4E2D3798F600BB2DEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEB2F4D2D3798F600BB2DEF /* HomeViewController.swift */; };
@@ -55,10 +55,10 @@
 		CC60A0362D37F73600FF6758 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		CC60A0382D37F75C00FF6758 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		CC60A03A2D37F77400FF6758 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
-		CC7638D92D3949E800BF19FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCD2E5072D39508D002A0D22 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		CCD2E5092D39528D002A0D22 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		CCD2E50B2D3952D2002A0D22 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		CCDDC6FE2D4A935A00201CAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCEB2F462D3798F600BB2DEF /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEB2F492D3798F600BB2DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCEB2F4B2D3798F600BB2DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		CC60A01A2D37F3B600FF6758 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CC7638D92D3949E800BF19FE /* GoogleService-Info.plist */,
+				CCDDC6FE2D4A935A00201CAC /* GoogleService-Info.plist */,
 				CCEB2F492D3798F600BB2DEF /* AppDelegate.swift */,
 				CCEB2F4B2D3798F600BB2DEF /* SceneDelegate.swift */,
 				CCD2E5072D39508D002A0D22 /* DatabaseManager.swift */,
@@ -284,9 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCEB2F562D3798F700BB2DEF /* Assets.xcassets in Resources */,
+				CCDDC6FF2D4A935A00201CAC /* GoogleService-Info.plist in Resources */,
 				CCEB2F592D3798F700BB2DEF /* Base in Resources */,
 				CCEB2F512D3798F600BB2DEF /* Base in Resources */,
-				CC7638DA2D3949E800BF19FE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
