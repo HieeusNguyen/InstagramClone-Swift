@@ -12,6 +12,7 @@
 		CC093AA52D53ACC20096D176 /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC093AA42D53ACC20096D176 /* IGFeedPostActionsTableViewCell.swift */; };
 		CC093AA72D53ACED0096D176 /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC093AA62D53ACED0096D176 /* IGFeedPostGeneralTableViewCell.swift */; };
 		CC093AA92D54FD660096D176 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC093AA82D54FD660096D176 /* FormTableViewCell.swift */; };
+		CC2F851D2D5BA37D00AB4AD9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F851C2D5BA37D00AB4AD9 /* Models.swift */; };
 		CC5ADAE02D3A97C4006F148B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5ADADF2D3A97C4006F148B /* Extensions.swift */; };
 		CC60A01D2D37F4F800FF6758 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A01C2D37F4F800FF6758 /* ExploreViewController.swift */; };
 		CC60A01F2D37F54C00FF6758 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60A01E2D37F54C00FF6758 /* CameraViewController.swift */; };
@@ -53,6 +54,7 @@
 		CC093AA42D53ACC20096D176 /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
 		CC093AA62D53ACED0096D176 /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		CC093AA82D54FD660096D176 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		CC2F851C2D5BA37D00AB4AD9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CC5ADADF2D3A97C4006F148B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CC60A01C2D37F4F800FF6758 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		CC60A01E2D37F54C00FF6758 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		CC60A0192D37F3AF00FF6758 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC2F851C2D5BA37D00AB4AD9 /* Models.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				CC60A02F2D37F6FC00FF6758 /* EditProfileViewController.swift in Sources */,
 				CC60A0232D37F56800FF6758 /* ProfileViewController.swift in Sources */,
 				CCD2E5082D39508D002A0D22 /* DatabaseManager.swift in Sources */,
+				CC2F851D2D5BA37D00AB4AD9 /* Models.swift in Sources */,
 				CC60A0312D37F70A00FF6758 /* SettingsViewController.swift in Sources */,
 				CC60A01F2D37F54C00FF6758 /* CameraViewController.swift in Sources */,
 				CC093AA52D53ACC20096D176 /* IGFeedPostActionsTableViewCell.swift in Sources */,

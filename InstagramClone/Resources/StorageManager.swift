@@ -38,7 +38,3 @@ public class StorageManager{
 public enum UserPostType{
     case photo, video
 }
-
-public struct UserPost{
-    let postType: UserPostType
-}
