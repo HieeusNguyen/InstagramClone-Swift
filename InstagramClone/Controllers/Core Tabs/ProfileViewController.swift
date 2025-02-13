@@ -95,6 +95,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         if indexPath.section == 1{
             let tabControlHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileTabsCollectionReusableView.identifier, for: indexPath) as! ProfileTabsCollectionReusableView
+            tabControlHeader.delegate = self
             return tabControlHeader
         }
         
@@ -109,7 +110,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         }
         
         // Size of section tabs
-        return CGSize(width: collectionView.width, height: 65)
+        return CGSize(width: collectionView.width, height: 50)
     }
     
 }
@@ -122,14 +123,14 @@ extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate
     }
     
     func profileHeaderDidTapFollowersButton(_ header: ProfileInfoHeaderCollectionReusableView) {
-        let vc = ListViewViewController()
+        let vc = ListViewViewController(data: ["Hieu","Hieu","Hieu","Hieu"])
         vc.title = "Followers"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
     
     func profileHeaderDidTapFollowingButton(_ header: ProfileInfoHeaderCollectionReusableView) {
-        let vc = ListViewViewController()
+        let vc = ListViewViewController(data: ["Hieu","Hieu","Hieu","Hieu"])
         vc.title = "Followers"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
@@ -143,5 +144,15 @@ extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate
         present(navVC, animated: true)
     }
     
+}
+
+extension ProfileViewController: ProfileTabsCollectionReusableViewDelegate{
+    func didTapGridButtonTap() {
+        //Reload collection view with data
+    }
+    
+    func didTapGridTaggedTab() {
+        //Reload collection view with data
+    }
     
 }
